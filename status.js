@@ -260,7 +260,7 @@ exports.removeItem = function(item) {
   if (to_remove < 0) {
     throw new Error('This cell is not in the bar');
   }
-  items.splice(to_remove);
+  items.splice(to_remove, 1);
 };
 
 exports.removeAll = function() {
